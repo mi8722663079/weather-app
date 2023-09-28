@@ -1,0 +1,62 @@
+/* animations */
+@keyframes Gradani {
+  from {
+    background-position: 0% center;
+  }
+  to {
+    background-position: -200% center;
+  }
+}
+/* end of animations */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+}
+body {
+  background-color: #313131;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main {
+  width: fit-content;
+  height: fit-content;
+  border-radius: 7px;
+  padding: 10px;
+  background-color: white;
+}
+.search {
+  width: 60vmin;
+  display: flex;
+  align-items: center;
+}
+input {
+  outline: none;
+  border: none;
+  margin-left: 10px;
+  background-color: transparent;
+}
+.error {
+  height: 80vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  animation: Gradani 10s linear infinite;
+  font-size: 55px;
+  background: linear-gradient(
+    90deg,
+    rgba(69, 226, 252, 1) 0%,
+    rgba(148, 58, 180, 1) 50%,
+    rgba(69, 226, 252, 1) 100%
+  );
+  background-size: 200%;
+  padding-bottom: 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
