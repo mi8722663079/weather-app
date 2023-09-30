@@ -9,6 +9,6 @@ $("input").on("click", () => {
   $(".weather *").fadeToggle();
 });
 $("input").on("input", () => {
-  $(".error").slideToggle(300);
-  $(".error *").fadeToggle(300);
+  $(".error").slideToggle();
+  $(".error *").fadeToggle();
 });
