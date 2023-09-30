@@ -19,7 +19,7 @@
   );
   background-size: 200%;
   padding-bottom: 20px;
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 /* end of general classes */
