@@ -8,6 +8,21 @@
   }
 }
 /* end of animations */
+/* general classes */
+.grad {
+  animation: Gradani 10s linear infinite;
+  background: linear-gradient(
+    90deg,
+    rgba(69, 226, 252, 1) 0%,
+    rgba(148, 58, 180, 1) 50%,
+    rgba(69, 226, 252, 1) 100%
+  );
+  background-size: 200%;
+  padding-bottom: 20px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* end of general classes */
 * {
   padding: 0;
   margin: 0;
@@ -39,24 +54,30 @@ input {
   margin-left: 10px;
   background-color: transparent;
 }
-.error {
+.error,
+.weather {
   height: 80vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+.weather {
+  justify-content: start;
+}
+.status,
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 50%;
+  height: 100%;
+  width: 100%;
+}
+.status h1 {
+  font-size: 20px;
+}
 h1 {
-  animation: Gradani 10s linear infinite;
   font-size: 55px;
-  background: linear-gradient(
-    90deg,
-    rgba(69, 226, 252, 1) 0%,
-    rgba(148, 58, 180, 1) 50%,
-    rgba(69, 226, 252, 1) 100%
-  );
-  background-size: 200%;
-  padding-bottom: 20px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
