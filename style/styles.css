@@ -41,14 +41,23 @@ body {
   height: fit-content;
   border-radius: 7px;
   padding: 10px;
-  background-color: white;
+  background: radial-gradient(
+    circle at 0px 0px,
+    rgba(215, 255, 138, 1) 40%,
+    rgba(0, 212, 255, 1) 90%
+  );
 }
 .search {
-  width: 60vmin;
+  width: 4vmin;
   display: flex;
   align-items: center;
 }
+.search i {
+  color: rgba(0, 212, 255, 1);
+}
 input {
+  opacity: 0;
+  width: inherit;
   outline: none;
   border: none;
   margin-left: 10px;
@@ -56,11 +65,14 @@ input {
 }
 .error,
 .weather {
-  height: 80vmin;
+  height: 70vh;
+  width: 80vw;
+  margin-top: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: white;
 }
 .weather {
   justify-content: start;
@@ -75,9 +87,48 @@ input {
   height: 100%;
   width: 100%;
 }
+.details {
+  display: grid;
+  padding: 5px;
+  width: 100%;
+  justify-items: center;
+  height: fit-content;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  grid-gap: 1px;
+}
+.detail {
+  background-color: rgba(69, 139, 252, 0.217);
+  width: 200px;
+  height: 50px;
+  color: rgba(215, 255, 138, 1);
+  font-size: 16px;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.details i {
+  height: 28px;
+  width: 15%;
+  color: rgba(215, 255, 138, 1);
+  margin: 0 5px 0 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(69, 225, 252, 0.623);
+  padding: 10px;
+  border-radius: 50%;
+}
 .status h1 {
-  font-size: 20px;
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+.h2 {
+  margin-bottom: 10px;
+}
+span {
+  margin-left: 5px;
 }
 h1 {
-  font-size: 55px;
+  font-size: 105px;
 }
