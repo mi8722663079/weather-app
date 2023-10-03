@@ -51,11 +51,14 @@ body {
   width: 4vmin;
   display: flex;
   align-items: center;
+  position: relative;
 }
 .search i {
   color: rgba(0, 212, 255, 1);
 }
+
 input {
+  color: rgba(0, 0, 0, 0.688);
   opacity: 0;
   width: inherit;
   outline: none;
