@@ -13,9 +13,9 @@
   animation: Gradani 10s linear infinite;
   background: linear-gradient(
     90deg,
-    rgba(1, 110, 55, 1) 0%,
-    rgba(0, 0, 0, 1) 60%,
-    rgba(1, 110, 55, 1) 100%
+    rgb(243, 246, 245) 0%,
+    rgb(0, 209, 246) 60%,
+    rgb(255, 255, 255) 100%
   );
   background-size: 200%;
   padding-bottom: 20px;
@@ -38,17 +38,12 @@ body {
   overflow: hidden;
 }
 .main {
+  background: url(/background/cloudy.jpeg);
   width: fit-content;
   height: fit-content;
   border-radius: 7px;
   padding: 10px;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 8%,
-    rgba(0, 72, 36, 1) 26%,
-    rgba(0, 123, 62, 1) 37%,
-    rgba(0, 255, 128, 1) 88%
-  );
+  background-position: 50% 50%;
 }
 .search {
   width: 4vw;
@@ -57,11 +52,11 @@ body {
   position: relative;
 }
 .search i {
-  color: rgba(0, 72, 36, 1);
+  color: rgb(255, 255, 255);
 }
 
 input {
-  color: rgba(0, 255, 128, 1);
+  color: rgb(248, 251, 250);
   opacity: 0;
   width: inherit;
   outline: none;
@@ -108,10 +103,10 @@ input {
   grid-gap: 5px;
 }
 .detail {
-  background-color: rgba(0, 0, 0, 0.604);
+  background-color: rgba(254, 254, 254, 0.604);
   width: 100%;
   height: 5vh;
-  color: rgba(0, 255, 128, 1);
+  color: rgb(0, 0, 0);
   border-radius: 40px;
   display: flex;
   align-items: center;
@@ -127,7 +122,7 @@ input {
 .details i {
   height: 28px;
   width: 20%;
-  color: rgba(0, 255, 128, 1);
+  color: rgb(255, 255, 255);
   margin: 0 5px 0 1px;
   display: flex;
   align-items: center;
