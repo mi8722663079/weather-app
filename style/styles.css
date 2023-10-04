@@ -38,7 +38,7 @@ body {
   overflow: hidden;
 }
 .main {
-  background: url(/background/cloudy.jpeg);
+  background: white;
   width: fit-content;
   height: fit-content;
   border-radius: 7px;
@@ -52,11 +52,11 @@ body {
   position: relative;
 }
 .search i {
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 input {
-  color: rgb(248, 251, 250);
+  color: rgba(0, 0, 0, 0.488);
   opacity: 0;
   width: inherit;
   outline: none;

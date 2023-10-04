@@ -43,16 +43,28 @@ $(function () {
         if ($(".weather h2").text().includes("Partially cloudy")) {
           $(".main").css(
             "background",
-            "url(/background/partially-cloudy.jpeg)"
+            "url(https://images.pexels.com/photos/391522/pexels-photo-391522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
           );
         } else if ($(".weather h2").text().includes("Clear")) {
-          $(".main").css("background", "url(/background/sunny.jpeg)");
+          $(".main").css(
+            "background",
+            "url(https://images.pexels.com/photos/912364/pexels-photo-912364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+          );
         } else if ($(".weather h2").text().includes("Rain")) {
-          $(".main").css("background", "url(/background/rainy.jpeg)");
+          $(".main").css(
+            "background",
+            "url(https://images.pexels.com/photos/2448749/pexels-photo-2448749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+          );
         } else if ($(".weather h2").text().includes("Snow")) {
-          $(".main").css("background", "url(/background/snow.jpeg)");
+          $(".main").css(
+            "background",
+            "url(https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+          );
         } else if ($(".weather h2").text().includes("Cloudy")) {
-          $(".main").css("background", "url(/background/cloudy.jpeg)");
+          $(".main").css(
+            "background",
+            "url(https://images.pexels.com/photos/3888585/pexels-photo-3888585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"
+          );
         }
       });
     }
