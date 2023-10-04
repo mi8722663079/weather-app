@@ -24,6 +24,7 @@
 }
 /* end of general classes */
 * {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -120,8 +121,8 @@ input {
   font-size: 14px;
 }
 .details i {
-  height: 2vh;
-  width: 4.2vw;
+  height: 40px;
+  width: 40px;
   color: rgb(255, 255, 255);
   margin: 0 5px 0 1px;
   display: flex;
@@ -130,6 +131,10 @@ input {
   background-color: black;
   padding: 10px;
   border-radius: 50%;
+}
+.details .fa-temperature-quarter {
+  height: 40px;
+  width: 50px;
 }
 .status h1 {
   font-size: 28px;
