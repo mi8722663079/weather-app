@@ -13,9 +13,9 @@
   animation: Gradani 10s linear infinite;
   background: linear-gradient(
     90deg,
-    rgba(69, 226, 252, 1) 0%,
-    rgba(148, 58, 180, 1) 50%,
-    rgba(69, 226, 252, 1) 100%
+    rgba(1, 110, 55, 1) 0%,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(1, 110, 55, 1) 100%
   );
   background-size: 200%;
   padding-bottom: 20px;
@@ -35,30 +35,33 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 .main {
   width: fit-content;
   height: fit-content;
   border-radius: 7px;
   padding: 10px;
-  background: radial-gradient(
-    circle at 0px 0px,
-    rgba(215, 255, 138, 1) 40%,
-    rgba(0, 212, 255, 1) 90%
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 8%,
+    rgba(0, 72, 36, 1) 26%,
+    rgba(0, 123, 62, 1) 37%,
+    rgba(0, 255, 128, 1) 88%
   );
 }
 .search {
-  width: 4vmin;
+  width: 4vw;
   display: flex;
   align-items: center;
   position: relative;
 }
 .search i {
-  color: rgba(0, 212, 255, 1);
+  color: rgba(0, 72, 36, 1);
 }
 
 input {
-  color: rgba(0, 0, 0, 0.688);
+  color: rgba(0, 255, 128, 1);
   opacity: 0;
   width: inherit;
   outline: none;
@@ -68,7 +71,7 @@ input {
 }
 .error,
 .weather {
-  height: 70vh;
+  height: 45vh;
   width: 80vw;
   margin-top: 10px;
   display: flex;
@@ -86,39 +89,50 @@ input {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-basis: 50%;
+  flex-basis: 70%;
   height: 100%;
   width: 100%;
 }
+.status img {
+  width: 40%;
+  margin-bottom: 5px;
+}
 .details {
+  flex-basis: 30%;
   display: grid;
   padding: 5px;
   width: 100%;
   justify-items: center;
   height: fit-content;
   grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-  grid-gap: 1px;
+  grid-gap: 5px;
 }
 .detail {
-  background-color: rgba(69, 139, 252, 0.217);
-  width: 200px;
-  height: 50px;
-  color: rgba(215, 255, 138, 1);
-  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.604);
+  width: 100%;
+  height: 5vh;
+  color: rgba(0, 255, 128, 1);
   border-radius: 40px;
   display: flex;
   align-items: center;
+  padding-right: 3px;
   justify-content: start;
+}
+.detail p {
+  font-family: "Roboto", sans-serif;
+  width: fit-content;
+  width: 100%;
+  font-size: 14px;
 }
 .details i {
   height: 28px;
-  width: 15%;
-  color: rgba(215, 255, 138, 1);
+  width: 20%;
+  color: rgba(0, 255, 128, 1);
   margin: 0 5px 0 1px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: rgba(69, 225, 252, 0.623);
+  background-color: black;
   padding: 10px;
   border-radius: 50%;
 }
